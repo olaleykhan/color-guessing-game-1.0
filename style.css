@@ -124,9 +124,17 @@ button:hover{
   #rules-display h1{
       color: rgba(51, 150, 81) ;
   }
+  .attribution {
+       font-size: 12px;
+        text-align: center;
+    margin-top: 20px;
+}
+.attribution a { color: hsl(0, 0%, 100%); }
 
 
 
+
+/* ********************Below are media queries for the page*************** */
   @media(max-width: 600px){
       body{
           font-size: 8px;
@@ -171,4 +179,11 @@ button:hover{
         font-size: 1rem;
   
     }
+
+    .attribution{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+    }
   }
+
