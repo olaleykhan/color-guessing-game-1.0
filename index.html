@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <div id="rules-display">
+    <h1> Hiyaa. It's nice to have you here</h1>
+    <p>Your Job is to guess which of the color cards in the game body corresponds with the color code in the header. </p>
+  
+    <p>each time you reload the page or  click on the "New Colors" button, a diffrent RGB color code will be shown in the header.  </p>
+    
+    <p>if you eventually guess right, the background of the header and all the cards will change to the correct color</p>
+    <p>You can then refresh the game by clicking on play again. </p>
+    <button id="close"> close</button>
+  </div>
+
+  
+  <div id="h1">
+    <h1 class="h1">The Great 
+      <br>
+      <span id="color-code-display">RGB</span> 
+      <br>  
+      Color Game</h1>
+  </div>
+
+  <div id="display-strip"> 
+   <div> <button id="rules"> Rules</button>
+    <button id="reset-button"> New Colors</button>
+</div>
+     <span id="verdict-display"></span>
+     <div id="game-mode">
+       <button id="easy-btn"> Easy</button>
+       <button id="hard-btn" class="selected">Hard</button>
+     </div>
+     <!-- <button> Rules</button> -->
+  </div>
+
+  <!-- <div class="color-display h1"> <h1 class="">RGB(145, 432, 123)</h1></div> -->
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+      <div class="clearfix"></div>
+ 
+
+
+    <script src="app.js"></script>
+</body>
+</html>

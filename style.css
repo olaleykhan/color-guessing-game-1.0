@@ -1,0 +1,174 @@
+body{
+    background-color: #232323;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    box-sizing: border-box;
+}
+button{
+    border: none;
+}
+h1{
+    margin: 0;
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 3rem;
+   
+    
+}
+.h1{
+    /* background-color:rgb(0, 255, 98); */
+    background-color:rgb(51, 150, 81);
+    padding: 0.6rem;
+
+    margin: 0;
+}
+
+.square{
+    width: 25%;
+    padding-bottom: 25%;
+    background-color: rgb(0, 255, 98);
+    float: left;
+    margin: 1.66%;
+    /* border-style: ridge; */
+    border-radius: 15%;
+    transition: all 0.2s;
+    /* -webkit-transition: all 2s; */
+}
+#container{
+    max-width: 60%;
+    margin:20px auto;
+}
+#display-strip{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    /* height: 50px; */
+    /* color: rgb(51, 150, 81); */
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    /* margin-bottom: 20px; */
+}
+
+button{
+    /* height: 50px; */
+    height: inherit;
+    padding: 14px 20px 14px 20px;
+    margin: 0;
+    font-size: 1.2rem;
+    /* border-radius: 20px; */
+    box-shadow: none;
+    border: none;
+    font-weight: 700;
+    color: rgb(51, 150, 81);
+    outline: none;
+    background-color: white;
+    transition: all 0.3;
+}
+button:hover{
+    color: white;
+    background-color: rgb(51, 150, 81);
+}
+
+#verdict-display{
+    min-width: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-block;
+    /* background-color: #fff; */
+    font-weight: 700;
+    color:rgb(51, 150, 81);
+}
+#game-mode{
+    display: inline-block;
+}
+.selected{
+    background-color: rgb(51, 150, 81);
+    color: white;
+}
+
+#color-code-display{
+    font-size: 1.4em;
+   border: 1px solid greenyellow;
+   margin: 1rem;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  #rules-display{
+      width: 60vw;
+      margin: 0 auto !important;
+      background-color: rgba(255, 255, 255, 0.868);
+      /* color: #ffffff; */
+      color: rgba(51, 150, 81);
+      padding: 2rem;
+      border-radius: 10px;
+      position: absolute;
+      left: 20vw;
+      top: 15vw;
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: none;
+      transition: all 0.8s;
+      
+  }
+  #rules-display h1{
+      color: rgba(51, 150, 81) ;
+  }
+
+
+
+  @media(max-width: 600px){
+      body{
+          font-size: 8px;
+      }
+
+      .square{
+        width: 30%;
+        padding-bottom: 30%;
+     
+    }
+    #container{
+        max-width: 80%;
+        margin:20px auto;
+    }
+
+      #verdict-display{
+        min-width: 60px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    #display-strip{
+        background-color: white;
+        flex-direction: column;
+       
+    }
+    
+    #display-strip div{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgb(51, 150, 81);
+        border-bottom: 1px solid rgb(51, 150, 81);
+    }
+
+    #rules-display{
+        width: 70vw;
+        color: rgba(51, 150, 81);
+        padding: 1.2rem;
+        left: 12vw;
+        top: 10vw;
+        font-size: 1rem;
+  
+    }
+  }
